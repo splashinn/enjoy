@@ -1,0 +1,10 @@
+<head>
+<title>videos</title>
+</head>
+<body>
+<h3>...</h3>
+<% @videos.each do |video| %>
+    <h3> <%= video[:title] %></h3>
+    <p> <a href="<%=video[:url]%>"> Video </a></p>
+<% end %>
+</body>
